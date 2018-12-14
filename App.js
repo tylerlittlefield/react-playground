@@ -56,34 +56,52 @@ export default class App extends React.Component {
         </MapView.Callout>
         <ActionButton buttonColor="rgba(231,76,60,1)">
           <ActionButton.Item 
-            buttonColor='#9b59b6' 
-            title="New Tree" 
-            onPress={() => {Alert.alert('You tapped the New Tree button!');}}>
+            buttonColor='#00695C' 
+            title="Search" 
+            onPress={() => {Alert.alert('You tapped the Search button!');}}>
+              <Icon 
+                name="search" 
+                style={styles.actionButtonIcon} 
+              />
+          </ActionButton.Item>
+          <ActionButton.Item 
+            buttonColor='#00796B' 
+            title="New Marker" 
+            onPress={() => {Alert.alert('You tapped the New Marker button!');}}>
               <Icon 
                 name="add-location" 
                 style={styles.actionButtonIcon} 
               />
           </ActionButton.Item>
           <ActionButton.Item 
-            buttonColor='#3498db' 
-            title="Edit Tree" 
-            onPress={() => {Alert.alert('You tapped the Edit Tree button!');}}>
+            buttonColor='#00897B' 
+            title="Edit Marker" 
+            onPress={() => {Alert.alert('You tapped the Edit Marker button!');}}>
               <Icon 
                 name="edit-location" 
                 style={styles.actionButtonIcon} 
               />
           </ActionButton.Item>
           <ActionButton.Item 
-            buttonColor='#1abc9c' 
-            title="Select" 
-            onPress={() => {Alert.alert('You tapped the Select button!');}}>
+            buttonColor='#009688' 
+            title="Select Marker" 
+            onPress={() => {Alert.alert('You tapped the Select Marker button!');}}>
               <Icon 
                 name="touch-app" 
                 style={styles.actionButtonIcon} 
               />
           </ActionButton.Item>
           <ActionButton.Item 
-            buttonColor='#1abc9c' 
+            buttonColor='#26A69A' 
+            title="Refresh" 
+            onPress={() => {Alert.alert('You tapped the Refresh button!');}}>
+              <Icon 
+                name="refresh" 
+                style={styles.actionButtonIcon} 
+              />
+          </ActionButton.Item>
+          <ActionButton.Item 
+            buttonColor='#4DB6AC' 
             title="Sync" 
             onPress={() => {Alert.alert('You tapped the Sync button!');}}>
               <Icon 
