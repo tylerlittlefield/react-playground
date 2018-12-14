@@ -20,4 +20,4 @@ class MainMap extends Component {
   }
 }
   
-  export default MainMap;
+export default MainMap;
