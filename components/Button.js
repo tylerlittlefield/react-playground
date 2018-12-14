@@ -1,28 +1,14 @@
-// deprecated, using Button.js with SwipeableModal.js instead
-
-import React, { Component } from 'react';
-import { StyleSheet, Alert } from 'react-native';
+import React from "react";
+import { StyleSheet, Alert } from "react-native";
 import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-// style sheet
-const styles = StyleSheet.create({
-  actionButtonIcon: {
-    fontSize: 20,
-    height: 22,
-    color: 'white',
-  },
-});
-
-// render the map
-class ToolButtons extends Component {
-  render() {
-    return (
-      <ActionButton buttonColor="rgba(231,76,60,1)">
+const Button = ({ onPress }) => (
+<ActionButton buttonColor="rgba(231,76,60,1)">
         <ActionButton.Item 
           buttonColor='#00695C' 
           title="Search" 
-          onPress={() => {Alert.alert('You tapped the Search button!');}}>
+          onPress={onPress}>
             <Icon 
               name="search" 
               style={styles.actionButtonIcon} 
@@ -31,7 +17,7 @@ class ToolButtons extends Component {
         <ActionButton.Item 
           buttonColor='#00796B' 
           title="Add" 
-          onPress={() => {Alert.alert('You tapped the New Marker button!');}}>
+          onPress={() => {Alert.alert('You tapped the Add button!');}}>
             <Icon 
               name="add-location" 
               style={styles.actionButtonIcon} 
@@ -40,7 +26,7 @@ class ToolButtons extends Component {
         <ActionButton.Item 
           buttonColor='#00897B' 
           title="Edit" 
-          onPress={() => {Alert.alert('You tapped the Edit Marker button!');}}>
+          onPress={() => {Alert.alert('You tapped the Edit button!');}}>
             <Icon 
               name="edit-location" 
               style={styles.actionButtonIcon} 
@@ -49,7 +35,7 @@ class ToolButtons extends Component {
         <ActionButton.Item 
           buttonColor='#009688' 
           title="Select" 
-          onPress={() => {Alert.alert('You tapped the Select Marker button!');}}>
+          onPress={() => {Alert.alert('You tapped the Select button!');}}>
             <Icon 
               name="touch-app" 
               style={styles.actionButtonIcon} 
@@ -58,7 +44,7 @@ class ToolButtons extends Component {
         <ActionButton.Item 
           buttonColor='#26A69A' 
           title="List" 
-          onPress={() => {Alert.alert('You tapped the List button!');}}>
+          onPress={onPress}>
             <Icon 
               name="list" 
               style={styles.actionButtonIcon} 
@@ -83,8 +69,14 @@ class ToolButtons extends Component {
             />
         </ActionButton.Item>
       </ActionButton>
-    );
-  }
-}
+);
 
-export default ToolButtons;
+export default Button;
+
+const styles = StyleSheet.create({
+  actionButtonIcon: {
+    fontSize: 20,
+    height: 22,
+    color: 'white',
+  },
+});

@@ -9,6 +9,7 @@ const region = {
   longitudeDelta: 0.0421,
 };
 
+// render the map
 class MainMap extends Component {
   render() {
     return (

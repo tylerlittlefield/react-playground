@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   },
 });
 
-// render the map
+// render the search bar
 class SearchBar extends Component {
   render() {
     return (

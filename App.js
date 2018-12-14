@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View } from 'react-native';
 
 // import components
-import { ToolButtons, SearchBar, MainMap } from './components';
+import { ToolButtons, SearchBar, MainMap, SwipeableModal } from './components';
 
 // render the map
 export default class App extends Component {
@@ -11,7 +11,7 @@ export default class App extends Component {
       <View style={{ flex: 1 }}>
         <MainMap/>
         <SearchBar/>
-        <ToolButtons/>
+        <SwipeableModal/>
       </View>
     );
   }
