@@ -1,3 +1,5 @@
+// src: https://github.com/TonioGarcia07/swipe
+
 import React, { Fragment, Component } from "react";
 import { View, StyleSheet, Text } from "react-native";
 import Button from "./Button";
