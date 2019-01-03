@@ -9,13 +9,19 @@ const region = {
   longitudeDelta: 0.0421,
 };
 
+// var MyComponent = React.createClass({
+//   getInitialState() {
+//     return { /* initial state */ };
+//   },
+// });
+
 // render the map
 class MainMap extends Component {
   render() {
     return (
       <MapView
         style={{ flex: 1 }}
-        initialRegion={ region }
+        region={region}
       />
     );
   }

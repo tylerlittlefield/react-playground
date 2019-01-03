@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View } from 'react-native';
 
 // import components
-import { ToolButtons, SearchBar, MainMap, SwipeableModal } from './components';
+import { SearchBar, MainMap, SwipeableModal } from './components';
 
 // render the map
 export default class App extends Component {

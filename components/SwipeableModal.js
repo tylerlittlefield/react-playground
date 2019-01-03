@@ -2,9 +2,9 @@
 
 import React, { Fragment, Component } from "react";
 import { View, StyleSheet, Text } from "react-native";
-import Button from "./Button";
-
 import Modal from "react-native-modal";
+
+import Button from "./Button";
 
 class SwipeableModal extends Component {
   state = {
@@ -52,11 +52,11 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#DCDCDC",
-    borderRadius: 4,
-    borderColor: "#C0C0C0",
+    backgroundColor: "rgba(255, 255, 255, 0.9)",
+    borderRadius: 6,
+    borderColor: "transparent",
     borderWidth: 2,
-    marginHorizontal: 40,
+    marginHorizontal: 10,
     marginVertical: 80
   },
   description: {
