@@ -1,3 +1,3 @@
 # react-playground
 
-![](images/screenshot.png)
+![](images/playground-demo.gif)
