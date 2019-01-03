@@ -1,3 +1,3 @@
 # react-playground
 
-![](images/playground-demo.gif)
+![](https://gfycat.com/HappygoluckySomeDairycow)
